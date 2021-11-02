@@ -1,0 +1,26 @@
+1. Create a class Customer which must have following properties
+	customerId, name, account, here account is a type of Account which will have 
+	accountNumber and amount.
+	Note: Account is a class that will have an has-a relationship with Customer
+2. Create one class CustomerStorage which will have a List<Customer> to maintain customer, 
+	this class will have three methods
+	1. void store(Customer): adds the customer in the List<Customer>
+	2. Customer getCustomer(int id): returns the customer matching to the id, 
+		if not found throw	CustomerNotFoundException, 	
+		use throws CustomerNotFoundException 
+	3. List<Customer> getCustomers(): returns the List<Customer> having all the customers added
+3. Create a separate class which will have main method to call the methods of CustomerStorage, 
+	main method must show a menu until you enter exit
+	1. Add customer		2. Find the customer by id
+	3. Find all customers 	4. Exit
+Note: If user inputs 4 then your program must exit, until that program must display the 
+	above options, 
+	these options must perform the actions based on the user input
+	For ex: if you enter 1: ask user to enter the name and the amount, 
+		however customerId and accountNumber can be auto-generated using some counters, 
+		this customer needs to be added in the List<Customer> of CustomerStorage
+		If you enter 2: ask user to enter the customer id and call the getCustomer(int id)
+		that finds the customer in the List<Customer> of CustomerStorage, 
+		if found display the customer details, else display the exception message
+		If you enter 3: call the getCustomers() of CustomerStorage() and display 
+		all the customers 
